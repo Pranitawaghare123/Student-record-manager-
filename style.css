@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+}
+
+/* navbar css */
+
+.navbar {
+    padding: 8px 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    background-color: rgb(21, 25, 66);
+}
+
+.nav-part1 {
+    display: flex;
+    gap: 20px
+}
+
+.nav-part1 .heading h1 {
+    font-size: 1.9rem;
+    color: rgb(255, 255, 255);
+}
+
+.nav-part1 .subHeading ul {
+    display: flex;
+    color: rgb(236, 231, 231);
+    gap: 25px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.nav-part1 .subHeading #first-child {
+    list-style: none;
+}
+
+.nav-part1 .ri-graduation-cap-fill {
+    font-size: 3.5rem;
+    color: rgb(251, 255, 255);
+    padding: 1px 20px;
+}
+
+.nav-part1 img {
+    margin: 10px 20px;
+    height: 40px;
+    width: 40px;
+    filter: brightness(0) invert(1);
+}
+
+/* counting for student course etc css */
+.count-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px 10px;
+}
+
+.section img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.count-section .section {
+    display: flex;
+    gap: 20px;
+    width: 20vw;
+    padding: 10px 20px;
+}
+
+.count-section .section .user {
+    padding: 4px 5px;
+}
+
+.count-section .section .user p {
+    color: rgb(54, 53, 53);
+    font-weight: bold;
+}
+
+.count-section .section .user h2 {
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+}
+
+.count-section1 {
+    border: 2px solid rgb(180, 180, 244);
+    border-radius: 10px;
+    background: radial-gradient(rgb(247, 247, 251), rgb(230, 230, 248), rgb(221, 221, 244));
+}
+
+.count-section1 img {
+    border: 2px solid rgb(204, 204, 240);
+}
+
+.count-section2 {
+    border: 2px solid rgb(158, 203, 182);
+    border-radius: 10px;
+    background: radial-gradient(rgb(236, 247, 242), rgb(220, 245, 233), rgb(185, 225, 206));
+}
+
+.count-section2 img {
+    border: 1px solid rgb(189, 232, 211);
+}
+
+.count-section3 {
+    border: 2px solid #c8b5df;
+    border-radius: 10px;
+    background: radial-gradient(#dbc8f3, #d7c7e9, #e3cff9)
+}
+
+.count-section3 img {
+    border: 1px solid rgb(243, 221, 248);
+}
+
+
+/* Adding user information form css */
+.section-info {
+    margin: 60px;
+    border: 1px solid rgb(239, 237, 237);
+    box-shadow: 2px 2px 4px rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.section-info .section-info1 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.section-info .section-info1 i {
+    font-size: 50px;
+    color: rgb(30, 30, 132);
+}
+
+.section-info .section-info1 .info-heading {
+    margin: 5px;
+}
+
+.section-info .section-info1 .info-heading h2 {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.section-info .section-info1 .info-heading p {
+    font-size: 16px;
+    color: gray;
+}
+
+.section-info .section-info2 {
+    margin: 30px 5px;
+
+}
+
+.section-info .section-info2 form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-info .section-info2 form .name,
+.email,
+.course,
+.marks {
+    display: flex;
+    gap: 15px;
+    width: 18vw;
+    padding: 8px 10px;
+    border: 1px solid rgb(204, 202, 202);
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(189, 187, 187);
+    margin-top: 10px;
+     cursor: pointer;
+}
+
+.section-info .section-info2 form .name input,
+.email input,
+.course select,
+.marks input {
+    border: none;
+    outline: none;
+    color: gray;
+     cursor: pointer;
+}
+
+.section-info .section-info2 form label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.section-info .section-info2 form label sup {
+    color: red;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.section-info .section-info2 form i {
+    color: rgb(92, 91, 91);
+}
+
+.button button {
+    display: flex;
+    padding: 12px 50px;
+    gap: 10px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(30, 30, 132);
+    outline: none;
+    border: none;
+    margin-top: 30px;
+}
+
+/* Filtering the data  */
+.filtering {
+    margin: 50px 60px;
+    box-shadow: 2px 2px 6px rgb(215, 214, 214);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.filtering .searchingByName {
+    display: flex;
+    gap: 20px;
+    border: 1px solid gainsboro;
+    width: 40vw;
+    padding: 2px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px gainsboro;
+     cursor: pointer;
+}
+
+.filtering .searchingByName input {
+    border: none;
+    outline: none;
+    color: rgb(78, 78, 78);
+    width: 40vw;
+
+}
+
+.filtering .searchingByName i {
+    font-size: 20px;
+    color: gray;
+    margin-top: 2px;
+
+}
+
+/* ,.searchByCourse,.SearchByMark */
+.filtering .searchByCourse{
+    display: flex;
+    width: 30vw;
+    gap: 10px;
+     cursor: pointer;
+    
+}
+.filtering .searchByCourse label{
+     margin-top: 6px;
+     color: rgb(50, 49, 49);
+
+}
+.filtering .searchByCourse select {
+    margin: 10px 15px;
+     cursor: pointer;
+    border: none;
+    outline: none;
+    color: gray;
+}
+
+.filtering .searchByCourse div{
+      border: 1px solid gainsboro;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 4px gainsboro;
+    width: 19vw;
+
+}
+.SearchByMark button{
+    display: flex;
+     cursor: pointer;
+    gap: 10px;
+    outline: none;
+    border: solid 2px rgb(195, 118, 195);
+    background-color: #ffff;
+    padding: 10px 20px;
+    color: purple;
+    border-radius: 10px;
+    font-weight: 400;
+   
+}
+
+/*data display css  */
+.displayData{
+    height: 40vh;
+     margin: 60px;
+    border: 1px solid rgb(239, 237, 237);
+    box-shadow: 2px 2px 4px rgb(219, 219, 219);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.displayData .student h3{
+  font-size: 25px;   
+}
+.displayData .student span{
+    color: gray;
+    font-size: 27px;
+    font-weight: 400;
+}
+.displayData .student  p{
+    color: gray;
+    font-size: 16px;
+    margin-top: 7px;
+}
+.displayData .dataAdd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.displayData .dataAdd img{
+    height: 100px;
+    width: 120px;
+    object-fit: cover;
+  
+}
+.displayData .dataAdd h3{
+    font-size: 25px;
+}
+.displayData .dataAdd p{
+    font-size: 16;
+    color: gray;
+}

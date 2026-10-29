@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Record Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="nav-part1">
+                <i class="ri-graduation-cap-fill"></i>
+                <div class="heading">
+                    <h1>Student Record Manager</h1>
+                    <div class="subHeading">
+                        <ul>
+                            <li id="first-child">Manage</li>
+                            <li>Track</li>
+                            <li>Grow</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-part1">
+                <img src="./Assests/Brightness 1.png" alt="theme" id="theme">
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="count-section">
+            <div class="section count-section1">
+                <img src="./Assests/user.jpg" alt="user">
+                <div class="user">
+                    <p>Student</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+            <div class="section count-section2">
+                <img src="./Assests/book.jpg" alt="user">
+                <div class="user">
+                    <p>Course</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+            <div class=" section count-section3">
+                <img src="./Assests/internet.jpg" alt="user">
+                <div class="user">
+                    <p>Average Marks</p>
+                    <h2>0</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="section-info">
+            <div class="section-info1">
+                <i class="ri-add-circle-fill"></i>
+                <div class="info-heading">
+                    <h2>Add New Student</h2>
+                    <p>Fill in the details below to add a new student</p>
+                </div>
+            </div>
+
+            <div class="section-info2">
+                <form>
+                    <section>
+                        <label for="name">Name<sup>*</sup></label>
+                        <div class="name">
+                            <i class="ri-user-3-line"></i>
+                            <input type="text" id="name" placeholder="Enter student name">
+                        </div>
+                    </section>
+                    <section>
+                        <label for="Email">Email<sup>*</sup></label>
+                        <div class="email">
+                            <i class="ri-mail-ai-line"></i>
+                            <input type="text" placeholder="Enter email address">
+                        </div>
+                    </section>
+                    <section>
+                        <label for="course">Course<sup>*</sup></label>
+                        <div class="course">
+                            <i class="ri-book-open-fill"></i>
+                            <select id="course" name="course" required>
+                                <option value="">-- Select a Course --</option>
+                                <option value="BCA">Bachelor of Computer Applications</option>
+                                <option value="BSc CS">B.Sc. Computer Science</option>
+                                <option value="BSc IT">B.Sc. Information Technology</option>
+                                <option value="BE Computer">BE Computer Engineering</option>
+                                <option value="BTech IT">B.Tech Information Technology</option>
+                                <option value="BTech AI">B.Tech Artificial Intelligence</option>
+                                <option value="BTech Data Science">B.Tech Data Science</option>
+                                <option value="BBA">Bachelor of Business Administration</option>
+                                <option value="BCom">Bachelor of Commerce </option>
+                                <option value="BA">Bachelor of Arts </option>
+                                <option value="BSc">Bachelor of Science</option>
+                                <option value="MCA">Master of Computer Applications</option>
+                                <option value="MSc CS">M.Sc. Computer Science</option>
+                                <option value="MBA">Master of Business Administration</option>
+                                <option value="MCom">Master of Commerce</option>
+                                <option value="Diploma IT">Diploma in Information Technology</option>
+                                <option value="Diploma CS">Diploma in Computer Engineering</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </section>
+                    <section>
+                        <label for="Marks">Marks<sup>*</sup></label>
+                        <div class="marks">
+                            <i class="ri-calculator-line"></i>
+                            <input type="number" name="marks" id="marks" placeholder="Enter marks (1 - 100) ">
+                        </div>
+                    </section>
+                </form>
+            </div>
+
+            <div class="button">
+                <button><i class="ri-add-fill"></i>
+                    <p>Add student</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="filtering">
+            <div class="searchingByName">
+                <i class="ri-search-line"></i>
+                <input type="text" placeholder="Search by name or email ..................">
+            </div>
+            <div class="searchByCourse">
+                <label for="course">Filter by course : </label>
+                <div>
+                <select id="course" name="course" required>
+                    <option value="">-- Select a Course --</option>
+                    <option value="BCA">Bachelor of Computer Applications</option>
+                    <option value="BSc CS">B.Sc. Computer Science</option>
+                    <option value="BSc IT">B.Sc. Information Technology</option>
+                    <option value="BE Computer">BE Computer Engineering</option>
+                    <option value="BTech IT">B.Tech Information Technology</option>
+                    <option value="BTech AI">B.Tech Artificial Intelligence</option>
+                    <option value="BTech Data Science">B.Tech Data Science</option>
+                    <option value="BBA">Bachelor of Business Administration</option>
+                    <option value="BCom">Bachelor of Commerce </option>
+                    <option value="BA">Bachelor of Arts </option>
+                    <option value="BSc">Bachelor of Science</option>
+                    <option value="MCA">Master of Computer Applications</option>
+                    <option value="MSc CS">M.Sc. Computer Science</option>
+                    <option value="MBA">Master of Business Administration</option>
+                    <option value="MCom">Master of Commerce</option>
+                    <option value="Diploma IT">Diploma in Information Technology</option>
+                    <option value="Diploma CS">Diploma in Computer Engineering</option>
+                    <option value="Other">Other</option>
+                </select>
+                </div>
+            </div>
+            <div class="SearchByMark">
+                <button><i class="ri-sort-number-asc"></i><p>Sort by marks</p></button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="displayData">
+             <div class="student">
+                <h3>Student <span class="count">(0)</span></h3>
+                <p>No students added yet.add your first student to get started</p>
+             </div>
+             <div class="dataAdd">
+                  <img src="./Assests/studentData.jpg" alt="" srcset="">
+                  <div>
+                     <h3>No students Found</h3>
+                  <p>Start by adding your first student using the form above.</p>
+                  </div>
+                 
+             </div>
+        </div>
+    </section>
+</body>
+
+</html>
